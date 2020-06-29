@@ -4,11 +4,11 @@ from pyspark.sql import SparkSession
 from pyspark.sql import functions as f
 from pyspark.sql.window import Window
 
-# spark = SparkSession\
-#     .builder\
-#     .master("local")\
-#     .appName("weblogCompetition")\
-#     .getOrCreate()
+ spark = SparkSession\
+     .builder\
+     .master("local")\
+     .appName("weblogCompetition")\
+     .getOrCreate()
 
 # preliminary Step is used to unzip log.gz file to .log file using gunzip
 # Step 1: Read log file using spark csv api with delimiter space
